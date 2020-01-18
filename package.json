@@ -6,6 +6,7 @@
 	"scripts": {
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
+		"prelint": "evalmd README.md",
 		"lint": "eslint .",
 		"tests-only": "node test",
 		"test": "npm run tests-only",
@@ -40,6 +41,7 @@
 		"covert": "^1.1.1",
 		"es-get-iterator": "^1.0.2",
 		"eslint": "^6.8.0",
+		"evalmd": "^0.0.19",
 		"for-each": "^0.3.3",
 		"object-inspect": "^1.7.0",
 		"safe-publish-latest": "^1.1.4",
