@@ -1,0 +1,29 @@
+{
+	"name": "iterate-iterator",
+	"version": "0.0.0",
+	"description": "Iterate any JS iterator. Works robustly in all environments, all versions.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/iterate-iterator.git"
+	},
+	"keywords": [
+		"iterate",
+		"iterator",
+		"iterable",
+		"es2015",
+		"es6",
+		"symbol.iterator",
+		"symbol",
+		"next"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/iterate-iterator/issues"
+	},
+	"homepage": "https://github.com/ljharb/iterate-iterator#readme"
+}
