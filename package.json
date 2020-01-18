@@ -1,6 +1,6 @@
 {
 	"name": "iterate-iterator",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Iterate any JS iterator. Works robustly in all environments, all versions.",
 	"main": "index.js",
 	"scripts": {
