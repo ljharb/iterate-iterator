@@ -4,7 +4,9 @@
 	"description": "Iterate any JS iterator. Works robustly in all environments, all versions.",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -25,5 +27,15 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/iterate-iterator/issues"
 	},
-	"homepage": "https://github.com/ljharb/iterate-iterator#readme"
+	"homepage": "https://github.com/ljharb/iterate-iterator#readme",
+	"devDependencies": {
+		"auto-changelog": "^1.16.2"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
+	}
 }
