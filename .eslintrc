@@ -12,6 +12,7 @@
 			"files": "test/**",
 			"rules": {
 				"func-style": 0,
+				"id-length": 0,
 				"max-params": 0,
 			},
 		},

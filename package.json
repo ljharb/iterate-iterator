@@ -64,5 +64,8 @@
 		"unreleased": false,
 		"commitLimit": false,
 		"backfillLimit": false
+	},
+	"testling": {
+		"files": "test/index.js"
 	}
 }
