@@ -19,7 +19,7 @@
 		"tests-only": "node test",
 		"test": "npm run tests-only",
 		"coverage": "covert test",
-		"posttest": "npx aud",
+		"posttest": "npx aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -48,6 +48,7 @@
 	"homepage": "https://github.com/ljharb/iterate-iterator#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^16.0.0",
+		"aud": "^1.0.0",
 		"auto-changelog": "^1.16.3",
 		"covert": "^1.1.1",
 		"es-get-iterator": "^1.1.0",
