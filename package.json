@@ -16,9 +16,8 @@
 		"pretest": "npm run lint",
 		"prelint": "evalmd README.md",
 		"lint": "eslint .",
-		"tests-only": "node test",
+		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
-		"coverage": "covert test",
 		"posttest": "npx aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
@@ -50,11 +49,11 @@
 		"@ljharb/eslint-config": "^16.0.0",
 		"aud": "^1.1.0",
 		"auto-changelog": "^2.0.0",
-		"covert": "^1.1.1",
 		"es-get-iterator": "^1.1.0",
 		"eslint": "^6.8.0",
 		"evalmd": "^0.0.19",
 		"for-each": "^0.3.3",
+		"nyc": "^10.3.2",
 		"object-inspect": "^1.7.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.0-next.5"
