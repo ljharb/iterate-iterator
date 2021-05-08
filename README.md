@@ -1,5 +1,7 @@
 # iterate-iterator <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
@@ -58,3 +60,7 @@ Simply clone the repo, `npm install`, and run `npm test`
 [license-url]: LICENSE
 [downloads-image]: https://img.shields.io/npm/dm/iterate-iterator.svg
 [downloads-url]: https://npm-stat.com/charts.html?package=iterate-iterator
+[codecov-image]: https://codecov.io/gh/ljharb/iterate-iterator/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/ljharb/iterate-iterator/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/ljharb/iterate-iterator
+[actions-url]: https://github.com/ljharb/iterate-iterator/actions
