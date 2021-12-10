@@ -4,12 +4,7 @@
 	"description": "Iterate any JS iterator. Works robustly in all environments, all versions.",
 	"main": "index.js",
 	"exports": {
-		".": [
-			{
-				"default": "./index.js"
-			},
-			"./index.js"
-		],
+		".": "./index.js",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
